@@ -1,0 +1,36 @@
+body {
+    background-color: #F5F7FA;
+    font-family: 'Inter', sans-serif;
+}
+.header-gradient {
+    background: linear-gradient(90deg, #0B3C5D 0%, #06263D 100%);
+}
+.govt-card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.govt-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.step-connector {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #E0E0E0;
+    z-index: 0;
+}
+@media (min-width: 768px) {
+    .step-connector {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 2px;
+    }
+}
